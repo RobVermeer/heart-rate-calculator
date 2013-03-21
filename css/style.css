@@ -13,3 +13,7 @@ input[type='range']::-webkit-slider-thumb {
 	background-repeat: repeat-x;
 	border-radius: 15px;
 }
+
+h1 small {
+	font-size: 14px;
+}
