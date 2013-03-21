@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Heart Rate Zone Calculator</title>
+	<meta name="description" content="Calculate your heart rate zones.">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="container">
+		<header class="row">
+			<div class="span12 page-header">
+				<h1>Heart Rate Zone Calculator <small>by Rob Vermeer</small></h1>
+			</div>
+		</header>
+		<section class="row content">
+			<form class="span12">
+				<fieldset class="well">
+					<h3>Your info</h3>
+					<label for="age">Age</label>
+					<input class="input-xxlarge" type="range" name="age" id="age" min="1" max="120" value="28">
+					<span class="help-block">Your are <span class="badge badge-info age"></span> years old.</span>
+					<label for="maxrate">Maximum heartrate</label>
+					<input class="input-xxlarge" type="range" name="maxrate" id="maxrate" min="100" max="230" value="191">
+					<span class="help-block">Your max heartrate is <span class="badge badge-important maxrate"></span>.</span>
+				</fieldset>
+
+				<fieldset class="well">
+					<h3>Your heartrate zones</h3>
+					<div class="progress progress-striped active">
+						<div class="bar bar-info" style="width: 50%;"></div>
+						<div class="bar bar-success" style="width: 12.5%;"></div>
+						<div class="bar bar-warning" style="width: 20%;"></div>
+						<div class="bar bar-danger" style="width: 10%;"></div>
+					</div>
+					
+					<p class="text-info">Recovery zone below <span class="badge badge-info recovery">115</span></p>
+					<p class="text-success">Temperate zone <span class="badge badge-success temperate-min">116</span> <span class="badge badge-success temperate">144</span></p>
+					<p class="text-warning">Aerobic zone <span class="badge badge-warning aerobic-min">145</span> <span class="badge badge-warning aerobic">171</span></p>
+					<p class="text-danger">Anaerobic zone <span class="badge badge-important anaerobic-min">172</span> <span class="badge badge-important anaerobic">192</span></p>
+				</fieldset>
+			</form>
+		</section>
+		<footer>
+			<ul class="breadcrumb">
+				<li><a href="http://robvermeer.nl">robvermeer.nl</a> <span class="divider">/</span></li>
+				<li class="active">heart rate zone calculator</li>
+			</ul>
+		</footer>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/functions.js"></script>
+</body>
