@@ -17,3 +17,11 @@ input[type='range']::-webkit-slider-thumb {
 h1 small {
 	font-size: 14px;
 }
+
+.progress .bar {
+	text-align: right;
+}
+
+.progress .bar span {
+	margin-right: 5px;
+}
