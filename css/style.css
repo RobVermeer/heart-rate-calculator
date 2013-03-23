@@ -25,3 +25,21 @@ h1 small {
 .progress .bar span {
 	margin-right: 5px;
 }
+
+@media (max-width: 767px) {
+	.progress .bar span {
+		display: none;
+	}
+	
+	h1 {
+		font-size: 37.5px;
+	}
+	
+	h3 {
+		font-size: 23.5px;
+	}
+	
+	.breadcrumb {
+		font-size: 13px;
+	}
+}
